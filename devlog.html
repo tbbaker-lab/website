@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Knockout Crew development archive, blogs and release notes.">
+  <meta name="theme-color" content="#050b18">
+  <title>Development Archive | Knockout Crew</title>
+  <link rel="icon" href="assets/images/crew-coin.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="archive-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header compact-header">
+    <a class="brand" href="index.html"><img src="assets/images/crew-coin.png" alt=""><span><b>KNOCKOUT</b><strong>CREW</strong></span></a>
+    <nav aria-label="Archive navigation"><a href="index.html">Back to the official site</a><a href="https://ban1she.itch.io/knockout-crew" target="_blank" rel="noopener">itch.io</a></nav>
+  </header>
+
+  <main id="main" class="archive-main">
+    <header class="archive-hero reveal">
+      <p class="eyebrow">STUDIO NOTES · INTERNAL BUILD HISTORY</p>
+      <h1>Development archive</h1>
+      <p>A behind-the-scenes record of how Knockout Crew grew from a small platform-fighting prototype into a feature-complete multiplayer project.</p>
+    </header>
+
+    <section class="archive-grid">
+      <article class="blog-card reveal">
+        <img src="assets/images/main-menu.png" alt="Knockout Crew main menu">
+        <div><time datetime="2026-06-23">23 June 2026</time><h2>Building a cleaner final menu</h2><p>The latest interface pass brought the Play Hub, current loadout and Crew Coin balance into one controller-friendly layout. The goal was clarity: every major destination can be reached without hunting through nested screens.</p><details><summary>Read the full entry</summary><p>We standardised panel borders, focus states, TV-safe margins and footer prompts. The same visual language now carries into Multiplayer, Locker, Career, Store and Settings. The interface is still lightweight enough for low-end machines and Xbox One targets.</p></details></div>
+      </article>
+
+      <article class="blog-card reveal">
+        <img src="assets/images/multiplayer.png" alt="Online create and join room screen">
+        <div><time datetime="2026-06-21">21 June 2026</time><h2>Making room-code multiplayer reliable</h2><p>The online flow now supports private six-character rooms, ready states, reconnect attempts, host controls and unanimous rematch voting.</p><details><summary>Read the full entry</summary><p>We also resolved overlapping spawn slots by assigning deterministic roster positions, moved character movement into the fixed physics loop and added a short spawn-grace period. Two-player matches end when an opponent leaves; larger parties continue with the remaining fighters.</p></details></div>
+      </article>
+
+      <article class="blog-card reveal">
+        <img src="assets/images/locker-v17.png" alt="Locker cosmetic collection">
+        <div><time datetime="2026-06-19">19 June 2026</time><h2>Separating fighter colour from cosmetics</h2><p>One of the most important Locker fixes was moving cosmetics into their own render layer so body colours no longer recolour hats, headphones, wings or accessories.</p><details><summary>Read the full entry</summary><p>Cosmetics now follow animation frames through category-specific anchor points. Unlock rules also keep Store, Crew Pass and reward-code items exclusive to their proper sources until earned.</p></details></div>
+      </article>
+
+      <article class="blog-card reveal">
+        <img src="assets/images/arenas.png" alt="Arena selection screen">
+        <div><time datetime="2026-06-17">17 June 2026</time><h2>Growing the arena roster</h2><p>Knockout Crew expanded from its original set to eleven selectable arenas, including Neon Metro, Sky Temple, Midnight Arcade, Sunset Docks, Crystal Cavern and Training Hub.</p><details><summary>Read the full entry</summary><p>Each map reuses a small set of tested gameplay layouts and lightweight background assets. That keeps collision predictable and memory use conservative while still giving every location a distinct identity.</p></details></div>
+      </article>
+
+      <article class="blog-card reveal">
+        <img src="assets/images/challenges.png" alt="Career challenges screen">
+        <div><time datetime="2026-06-15">15 June 2026</time><h2>Progression beyond a single match</h2><p>Career milestones, rotating daily and weekly quests, Crew Coins, reward codes and the Crew Pass give each session a longer-term purpose.</p><details><summary>Read the full entry</summary><p>Quest rotations use calendar-day and calendar-week keys, while reward sources remain clearly separated. That means code-exclusive cosmetics never appear in the Store or Crew Pass, and Pass cosmetics remain tied to their reward track.</p></details></div>
+      </article>
+
+      <article class="blog-card reveal">
+        <img src="assets/images/loading-screen.png" alt="Sky Temple loading screen">
+        <div><time datetime="2026-06-12">12 June 2026</time><h2>Turning loading into part of the presentation</h2><p>Loading screens were rebuilt as match briefings, with arena identity, progress stages, tips, fighter status and music that carries into the match.</p><details><summary>Read the full entry</summary><p>The screens use calm motion and simple layered artwork instead of expensive effects. Reduced-motion settings and low-spec profiles keep them responsive across a wide range of hardware.</p></details></div>
+      </article>
+    </section>
+
+    <section class="video-journal reveal">
+      <div><p class="eyebrow">VIDEO DEVLOGS</p><h2>More production diaries are coming.</h2><p>Future video diaries, patch walkthroughs and release updates will be linked here and on the itch.io project page.</p></div>
+      <a class="button primary" href="https://ban1she.itch.io/knockout-crew" target="_blank" rel="noopener">Open itch.io devlog</a>
+    </section>
+  </main>
+
+  <footer><div class="footer-top"><div class="footer-brand"><img src="assets/images/crew-coin.png" alt=""><span><b>KNOCKOUT CREW</b><small>Development archive</small></span></div><div class="footer-links"><a href="index.html">Official site</a><a href="privacy.html">Privacy</a><a href="mailto:contact@knockoutcrew.uk">Contact</a></div></div><p>© <span id="year"></span> Knockout Crew Games.</p></footer>
+</body>
+</html>
